@@ -177,6 +177,7 @@ nav ul li {
     font-size: 18px;
     font-family: 'Open Sans';
     padding: 0 15px;
+    width: 100px;
 }
 
 nav ul li:last-child {
@@ -186,9 +187,13 @@ nav ul li:last-child {
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    padding: 4px 30px;
     font-size: 18px;
     position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.item-menu:hover {
+    font-weight: 700;
 }
 
 nav button {
@@ -335,6 +340,23 @@ nav button {
     float: right;
     margin-top: -30px;
     margin-right: 50px;
+}
+
+.hero-text img {
+    animation: girar 15s linear infinite;
+    /* Nombre, duración, interpolación y repetición */
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+        /* Punto de inicio */
+    }
+
+    to {
+        transform: rotate(360deg);
+        /* Punto de fin */
+    }
 }
 
 /* End Hero Section */
@@ -603,11 +625,16 @@ nav button {
 .list-footer ul li {
     list-style-type: none;
     display: inline-block;
+    padding: 0 15px;
+    width: 90px;
+}
+
+.list-footer ul li a {
+    text-decoration: none;
     font-size: 16px;
     font-family: 'Open Sans';
-    padding: 0 15px;
-    font-size: 18px;
     color: #265BFF;
+    cursor: pointer;
 }
 
 .section-footer {
